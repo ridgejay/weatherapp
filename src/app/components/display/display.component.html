@@ -1,0 +1,39 @@
+
+<!-- Card -->
+<mdb-card class="card">
+  <div class="view  waves-light" mdbWavesEffect>
+    <!-- Card img -->
+    
+    
+    <a>
+      <div class="mask"></div>
+    </a>
+  </div>
+  <!--Card content-->
+  <mdb-card-body>
+    <div class="container">
+    <!--Title-->
+    <mdb-card-title>
+      <h3 class="animated bounceInUp once" >{{weather.city}}<img class="animated pulse infinite" [src]="weather.icon" /> </h3>
+      
+    </mdb-card-title>
+
+    <!--Text-->
+    <mdb-card-text>
+      <h6><strong>Conditions: {{weather.conditions}}</strong></h6>  <br/>
+      <h6><strong>Forecast: {{weather.description}}</strong></h6>  <br/>
+       <h6><strong>Temperature: {{weather.temperature}} &deg;F</strong></h6> <br/>
+        <h6><strong>Feels Like: {{weather.feels}} &deg;F</strong></h6> <br/>
+        <p><strong>High: {{weather.high}} &deg;F</strong></p>  <br/>
+        <p><strong>Low: {{weather.low}} &deg;F</strong></p>  <br/>
+    <p><strong>Humidity: {{weather.humidity}} %</strong></p>  <br/>
+    <p><strong>Wind: {{weather.wind}} mph</strong></p>  <br/>
+    
+    
+    </mdb-card-text>
+
+    </div>
+  </mdb-card-body>
+  
+</mdb-card>
+<!-- Card -->
